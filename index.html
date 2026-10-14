@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | นันธิดา พิมพ์เมืองคุณ</title>
+    <!-- Tailwind CSS สำหรับตกแต่ง -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ฟอนต์ภาษาไทย Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Prompt', sans-serif; 
+            /* พื้นหลังสีสันสดใสพาสเทล */
+            background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #FF8C00, #FF0080);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 text-gray-800">
+
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- ส่วนหัว (Header) -->
+        <div class="glass-card rounded-3xl p-8 mb-8 text-center relative overflow-hidden">
+            <!-- วงกลมตกแต่ง -->
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-32 h-32 bg-yellow-300 rounded-full opacity-50 blur-2xl"></div>
+            <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-32 h-32 bg-pink-400 rounded-full opacity-50 blur-2xl"></div>
+            
+            <div class="relative z-10">
+                <!-- พื้นที่สำหรับใส่รูปโปรไฟล์ -->
+                <div class="mx-auto w-40 h-40 bg-gradient-to-tr from-pink-300 to-blue-300 rounded-full p-1 shadow-lg mb-6">
+                    <div class="w-full h-full bg-white rounded-full flex flex-col items-center justify-center text-4xl overflow-hidden border-4 border-white">
+                        <!-- ไม่สามารถดึงรูปภาพจากหน้าจอมาใส่ได้ จึงทำเป็นช่องว่างสีสันสดใสแทน -->
+                        👩🏻‍🎓
+                        <span class="text-xs text-gray-400 mt-2 font-light">ใส่รูปภาพที่นี่</span>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl font-bold mb-3 text-gradient">นันธิดา พิมพ์เมืองคุณ</h1>
+                <p class="text-2xl text-gray-600 mb-4 font-medium">"ครีมมี่"</p>
+                
+                <div class="inline-block bg-white/70 rounded-full px-6 py-2 text-sm text-gray-600 mb-6 border border-pink-100 shadow-sm">
+                    ✨ อาชีพที่ใฝ่ฝัน: <span class="font-semibold text-pink-500">นักวิชาการสาธารณสุข & ธุรกิจส่วนตัว</span>
+                </div>
+
+                <p class="italic text-gray-500 text-lg max-w-2xl mx-auto bg-white/50 p-4 rounded-2xl">
+                    "ไม่มีความสําเร็จใดเกิดขึ้นได้ หากปราศจากความพยายามและการลงมือทํา"
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- ข้อมูลส่วนตัว -->
+            <div class="glass-card rounded-3xl p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-blue-600">
+                    <span class="bg-blue-100 p-2 rounded-xl">👤</span> เกี่ยวกับฉัน
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-500">อายุ</span>
+                        <span class="font-medium">19 ปี</span>
+                    </li>
+                    <li class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-500">ราศี</span>
+                        <span class="font-medium text-purple-600">เมษ ♈</span>
+                    </li>
+                </ul>
+
+                <h3 class="text-lg font-bold mt-8 mb-4 text-gray-700">กิจกรรมที่ชอบ 💖</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium shadow-sm">🎵 ฟังเพลง</span>
+                    <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium shadow-sm">🎬 ดูหนัง</span>
+                    <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full text-sm font-medium shadow-sm">📸 ถ่ายรูป</span>
+                </div>
+            </div>
+
+            <!-- ช่องทางการติดต่อ -->
+            <div class="glass-card rounded-3xl p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-green-500">
+                    <span class="bg-green-100 p-2 rounded-xl">📱</span> ช่องทางการติดต่อ
+                </h2>
+                <div class="space-y-5">
+                    <a href="tel:06409102030" class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-green-200">
+                        <div class="text-2xl">📞</div>
+                        <div>
+                            <p class="text-xs text-gray-400 font-medium">เบอร์โทรศัพท์</p>
+                            <p class="font-semibold text-gray-700">064-09102030</p>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:69292302047@scphkk.ac.th" class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-red-200">
+                        <div class="text-2xl">✉️</div>
+                        <div class="overflow-hidden">
+                            <p class="text-xs text-gray-400 font-medium">อีเมล</p>
+                            <p class="font-semibold text-gray-700 truncate">69292302047@scphkk.ac.th</p>
+                        </div>
+                    </a>
+
+                    <div class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-blue-200">
+                        <div class="text-2xl">🌐</div>
+                        <div>
+                            <p class="text-xs text-gray-400 font-medium">โซเชียลมีเดีย</p>
+                            <p class="font-semibold text-gray-700">@kimmqe.l</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- การศึกษา -->
+        <div class="glass-card rounded-3xl p-8 mt-8 text-center">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-500">🎓 การศึกษา</h2>
+            <p class="text-gray-600 font-medium bg-white/60 inline-block px-6 py-3 rounded-2xl shadow-sm">
+                วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
