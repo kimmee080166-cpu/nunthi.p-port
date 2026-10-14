@@ -40,11 +40,9 @@
             
             <div class="relative z-10">
                 <!-- พื้นที่สำหรับใส่รูปโปรไฟล์ -->
-                <div class="mx-auto w-40 h-40 bg-gradient-to-tr from-pink-300 to-blue-300 rounded-full p-1 shadow-lg mb-6">
-                    <div class="w-full h-full bg-white rounded-full flex flex-col items-center justify-center text-4xl overflow-hidden border-4 border-white">
-                        <!-- ไม่สามารถดึงรูปภาพจากหน้าจอมาใส่ได้ จึงทำเป็นช่องว่างสีสันสดใสแทน -->
-                        👩🏻‍🎓
-                        <span class="text-xs text-gray-400 mt-2 font-light">ใส่รูปภาพที่นี่</span>
+                <div class="mx-auto w-48 h-48 sm:w-56 sm:h-56 bg-gradient-to-tr from-pink-300 to-blue-300 rounded-full p-1 shadow-lg mb-6">
+                    <div class="w-full h-full bg-white rounded-full overflow-hidden border-4 border-white flex items-center justify-center">
+                        <img src="S__43958274.jpg" alt="Profile Picture" class="w-full h-full object-cover object-top">
                     </div>
                 </div>
 
@@ -77,6 +75,18 @@
                         <span class="text-gray-500">ราศี</span>
                         <span class="font-medium text-purple-600">เมษ ♈</span>
                     </li>
+                    <li class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-500">สัญชาติ</span>
+                        <span class="font-medium">ไทย</span>
+                    </li>
+                    <li class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-500">ศาสนา</span>
+                        <span class="font-medium">พุทธ</span>
+                    </li>
+                    <li class="flex items-center justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-500">กรุ๊ปเลือด</span>
+                        <span class="font-medium text-red-500">B</span>
+                    </li>
                 </ul>
 
                 <h3 class="text-lg font-bold mt-8 mb-4 text-gray-700">กิจกรรมที่ชอบ 💖</h3>
@@ -93,14 +103,17 @@
                     <span class="bg-green-100 p-2 rounded-xl">📱</span> ช่องทางการติดต่อ
                 </h2>
                 <div class="space-y-5">
-                    <a href="tel:06409102030" class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-green-200">
-                        <div class="text-2xl">📞</div>
-                        <div>
-                            <p class="text-xs text-gray-400 font-medium">เบอร์โทรศัพท์</p>
-                            <p class="font-semibold text-gray-700">064-09102030</p>
-                        </div>
-                    </a>
                     
+                    <!-- ที่อยู่ -->
+                    <div class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-yellow-200">
+                        <div class="text-2xl">📍</div>
+                        <div>
+                            <p class="text-xs text-gray-400 font-medium">ที่อยู่</p>
+                            <p class="font-semibold text-gray-700 leading-tight">อำเภอพังโคน จังหวัดสกลนคร<br>47160</p>
+                        </div>
+                    </div>
+                    
+                    <!-- อีเมล -->
                     <a href="mailto:69292302047@scphkk.ac.th" class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-red-200">
                         <div class="text-2xl">✉️</div>
                         <div class="overflow-hidden">
@@ -109,6 +122,7 @@
                         </div>
                     </a>
 
+                    <!-- โซเชียลมีเดีย -->
                     <div class="flex items-center gap-4 p-4 bg-white/60 rounded-2xl hover:bg-white transition shadow-sm border border-transparent hover:border-blue-200">
                         <div class="text-2xl">🌐</div>
                         <div>
@@ -122,11 +136,40 @@
         </div>
         
         <!-- การศึกษา -->
-        <div class="glass-card rounded-3xl p-8 mt-8 text-center">
-            <h2 class="text-2xl font-bold mb-4 text-indigo-500">🎓 การศึกษา</h2>
-            <p class="text-gray-600 font-medium bg-white/60 inline-block px-6 py-3 rounded-2xl shadow-sm">
-                วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น
-            </p>
+        <div class="glass-card rounded-3xl p-8 mt-8">
+            <h2 class="text-2xl font-bold mb-8 text-center text-indigo-500 flex items-center justify-center gap-2">
+                <span class="bg-indigo-100 p-2 rounded-xl">🎓</span> ประวัติการศึกษา
+            </h2>
+            
+            <div class="max-w-2xl mx-auto space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-indigo-200 before:to-transparent">
+                
+                <!-- ปริญญาตรี -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/80 p-5 rounded-2xl shadow-sm border border-indigo-50">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-gray-800">ระดับปริญญาตรี (กำลังศึกษา)</div>
+                        </div>
+                        <div class="text-gray-600 text-sm md:text-base">วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</div>
+                    </div>
+                </div>
+
+                <!-- มัธยมปลาย -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-pink-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/80 p-5 rounded-2xl shadow-sm border border-pink-50 text-left md:text-right">
+                        <div class="flex items-center justify-between md:justify-end space-x-2 mb-1">
+                            <div class="font-bold text-gray-800">ระดับมัธยมศึกษาตอนปลาย</div>
+                        </div>
+                        <div class="text-gray-600 text-sm md:text-base">โรงเรียนเตรียมอุดมศึกษาภาคตะวันออกเฉียงเหนือ</div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
